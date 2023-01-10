@@ -11,29 +11,28 @@
     <form method="post" action='https://register-demo.freecodecamp.org'>
       <fieldset>
         <label for="name">Name<input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="age">Age (optional)<input id="age" name="age " type="age" placeholder="Age" /></label>
       </fieldset>
+      <label for="feature">What is your favorite feature of freeCodeCamp?
+        <select id="feature" name="feature">
+          <option value="">(Select an option)</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </label>
       <fieldset>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
-        <label for="terms-and-conditions">
-          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definitely"><input id="definitely" type="radio" name="definitely" class="inline" /> Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="maybe" class="inline" /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" type="radio" name="not-sure" class="inline" /> Not Sure</label>
         </label>
       </fieldset>
       <fieldset>
         <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
         <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        <label for="referrer">How did you hear about us?
-          <select id="referrer" name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
-          </select>
-        </label>
         <label for="bio">Provide a bio:
           <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
         </label>
