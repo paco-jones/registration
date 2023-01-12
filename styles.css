@@ -76,6 +76,13 @@ body {
   a {
     color: #dfdfe2;
   }
-  
+  body {
+     background-image: url('background3.png');
+     background-repeat: no-repeat top center fixed;
+     background-size: cover;
+     margin: 0;
+     height: 100%;
+     width: 100;
+  }
   
   
